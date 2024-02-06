@@ -7,8 +7,30 @@
     <!-- css link -->
     <link rel="stylesheet" href="../../../output.css">
 </head>
-<body>
-   
+<body class="max-w-[100vw] h-screen bg-slate-600 text-white">
+   <main class="w-[80vw] h-full mx-5">
+    <div class="text-center mb-9">
+        <h1>BMI CALCULATOR</h1>
+    </div>
+    <form action="">
+        <label class="text-sm" for="weight">Enter Your Height (cm)</label>
+        <br>
+        <input class="bg-[#ccc] rounded-lg mb-2 " type="text" name="hight" id="height_input" required max="3" min="2">
+        <br>
+        <label class="text-sm" for="weight">Enter Your Weight (KG)</label>
+        <br>
+        <input class="bg-[#ccc] rounded-lg" type="weight" name="weight" id="weight_input" required max="3" min="2">
+        <br>
+        <button id="btn" class="cursor-pointer text-sm my-5 px-3 py-1 bg-slate-500 text-white rounded-3xl" >Calculate</button>
+   </form>
+   <h4 class="mb-1 text-sm">Result - <p id="Result" class="inline-block"></p> </h4>
+   <div class="w-full h-20 bg-slate-700 pl-14 pt-1 rounded-xl">
+    <h3 class="text-[15px] text-yellow-500">BMI Weight Guide</h3>
+    <p class="text-[10px]">Under Weight = Less than 18.6</p>
+    <p class="text-[10px]">Normal Range = 18.6 and 24.9</p>
+    <p class="text-[10px]">Overweight = Greater than 24.9</p>
+   </div>
+   </main>
 <script src="./main.js"></script>
 </body>
 </html>
