@@ -7,10 +7,10 @@ const addColorCode = document.querySelector("span")
 
 // bar name
 const Red = document.querySelector("#red")
-
+let colorInterval;
 // added event lister for btn
 colorChangerBtn.addEventListener("click",()=>{
-    const colorInterval =setInterval(() => {
+    colorInterval = setInterval(() => {
         // generating three number values form 0 to 255
         let colorOne = Math.round(Math.random()*255);
         let colorTwo = Math.round(Math.random()*255)
@@ -22,7 +22,8 @@ colorChangerBtn.addEventListener("click",()=>{
         // pushing rbg code in span 
         addColorCode.innerHTML = generatedColor
     }, 1000);
-    Stop.addEventListener("click",()=>{
-        clearInterval(colorInterval)
-    })
+})
+
+Stop.addEventListener("click",()=>{
+    clearInterval(colorInterval)
 })
