@@ -19,6 +19,9 @@ btn.addEventListener('click',(e)=>{
                 remaining.innerHTML = guesses
             }else{
                 alert("game is over please try again !")
+                guessOld.innerHTML = ""
+                remaining.innerHTML = ""
+                guesses = 10
             }
         }
     }
