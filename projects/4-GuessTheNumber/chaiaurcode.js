@@ -2,10 +2,11 @@ const guessOld = document.querySelector(".guesses")
 const remaining = document.querySelector(".lastResult")
 const inputField = document.querySelector(".guessField")
 const btn = document.querySelector("#subt")
+let guesses = 10;
 
 btn.addEventListener('click',(e)=>{
     e.preventDefault()
-    let randomNumber = Math.floor(Math.random()*20)+1
+    let randomNumber = Math.floor(Math.random()*30)+1
     if (inputField.value > 20 || inputField.value < 1 || isNaN(inputField.value)){
         alert("please provide valid input")
     }else{
@@ -14,7 +15,13 @@ btn.addEventListener('click',(e)=>{
             guessOld.innerHTML = ""
         }else {
             guessOld.innerHTML += `${inputField.value} `
+            if(guesses !== 0){
+                remaining.innerHTML = guesses
+            }else{
+                alert("game is over please try again !")
+            }
         }
     }
+    guesses --
 })
 
