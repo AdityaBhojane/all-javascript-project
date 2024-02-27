@@ -16,6 +16,7 @@
         background-color: #1c1c1c;
         color: #ffffff;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -27,18 +28,30 @@
         display: flex;
         flex-direction: row;
       }
+      .table_div{
+        margin-top: 20px;
+      }
     </style>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
-        >Youtube channel</a
-      >
-    </nav>
     <div class="project">
       <div id="insert">
-        <div class="key">Press the key and watch magic</div>
+        <div>Press the key and watch magic</div>
+      </div>
+      <div class="table_div">
+        <table cellpadding = "12" >
+          <tr>
+            <th colspan = "2">keyboard Info</th>
+          </tr>
+          <tr>
+            <td>key </td>
+            <td>code </td>
+          </tr>
+          <tr>
+            <td class="code"></td>
+            <td class="key"></td>
+          </tr>
+        </table>
       </div>
     </div>
 
