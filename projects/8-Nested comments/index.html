@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .comments {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .comment {
+            margin-bottom: 15px;
+        }
+
+        .comment-content {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+          }
+          
+          .comment-actions {
+            margin-bottom: 10px;
+            margin-top: 5px;
+        }
+
+        .btn-reply,
+        .btn-add,
+        .btn-remove {
+            margin-right: 10px;
+            padding: 5px 10px;
+            border: 1px solid #4CAF50; /* Green */
+            border-radius: 3px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .btn-reply:hover,
+        .btn-add:hover,
+        .btn-remove:hover {
+            background-color: #45a049; /* Darker Green */
+        }
+
+        .nested-comments {
+            margin-left: 20px;
+        }
+        .input, .input:focus-visible{
+          border: none;
+          outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="comments">
+        <li class="comment">
+            <div class="comment-content">
+                <input class="input" type="text" placeholder="enter something here">
+            </div>
+            <div class="comment-actions">
+                <button class="btn-reply">Reply</button>
+                <button class="btn-add">Add Comment</button>
+                <button class="btn-remove">Remove Comment</button>
+            </div>
+            <ul class="nested-comments">
+
+                <!-- <li class="comment">
+                    <div class='comment-content'>
+                        <p>This is a nested comment.</p>
+                    </div>
+                    <div class='comment-actions'>
+                        <button class='btn-reply'>Reply</button>
+                        <button class='btn-add'>Add Comment</button>
+                        <button class='btn-remove'>Remove Comment</button>
+                    </div>
+                </li>
+                 -->
+            </ul>
+        </li>
+    </ul>
+<script src="./chaiaurcode.js"></script>
+</body>
+</html>
