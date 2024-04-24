@@ -766,14 +766,6 @@ video {
   margin: auto;
 }
 
-.m-\[\] {
-  margin: ;
-}
-
-.m-\[5\] {
-  margin: 5;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -797,16 +789,6 @@ video {
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-}
-
-.my-\[\] {
-  margin-top: ;
-  margin-bottom: ;
-}
-
-.my-\[3vw\] {
-  margin-top: 3vw;
-  margin-bottom: 3vw;
 }
 
 .mb-1 {
@@ -1037,32 +1019,16 @@ video {
   width: 80vw;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .w-auto {
   width: auto;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[20vw\] {
-  width: 20vw;
-}
-
-.w-\[40vw\] {
-  width: 40vw;
-}
-
-.w-\[50vw\] {
-  width: 50vw;
-}
-
-.w-\[30vw\] {
-  width: 30vw;
 }
 
 .max-w-\[100vw\] {
@@ -1079,14 +1045,6 @@ video {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[60vw\] {
-  max-width: 60vw;
-}
-
-.max-w-\[80vw\] {
-  max-width: 80vw;
 }
 
 .border-collapse {
@@ -1432,19 +1390,6 @@ video {
   background-color: rgb(113 63 18 / var(--tw-bg-opacity));
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#\] {
-  background-color: #;
-}
-
-.bg-\[\#686868\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(104 104 104 / var(--tw-bg-opacity));
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -1536,16 +1481,6 @@ video {
   padding-bottom: 1vw;
 }
 
-.py-\[3vw\] {
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-}
-
-.py-\[2vw\] {
-  padding-top: 2vw;
-  padding-bottom: 2vw;
-}
-
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -1562,12 +1497,16 @@ video {
   padding-top: 0.25rem;
 }
 
-.pt-\[2vw\] {
-  padding-top: 2vw;
-}
-
 .text-center {
   text-align: center;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-serif {
@@ -1592,6 +1531,10 @@ video {
   font-size: 20px;
 }
 
+.text-\[30px\] {
+  font-size: 30px;
+}
+
 .text-\[40px\] {
   font-size: 40px;
 }
@@ -1613,10 +1556,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[1vw\] {
-  font-size: 1vw;
 }
 
 .font-bold {
@@ -1681,10 +1620,6 @@ video {
 .text-yellow-500 {
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
 }
 
 .underline {
